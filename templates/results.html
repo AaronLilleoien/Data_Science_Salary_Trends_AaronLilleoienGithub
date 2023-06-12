@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>    
+<style>
+    body {
+        background-image: url('static/css/background_results.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+</style>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles1.css') }}">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+            <h2>Follow the path to your new data sciences job ...</h2>
+		    
+	    </div>
+    </header>
+    
+            <div class="container">
+               
+                <div class="fieldset">
+                    <img src="https://cdn.pixabay.com/photo/2015/06/19/21/24/avenue-815297_1280.jpg" width="440" height = "240" style="display: block; margin: 0 auto;">
+
+                    <p style="margin: 0;"><b>Salary range prediction based on your choices</b></p>
+   
+                    <h1 style="text-align: center;">{{ output }}</h1>
+                    <h1 style="text-align: center;">{{ results }}</h1>
+            
+                </div>
+            </div>
+            <a href="http://127.0.0.1:5000/" class="button">Return to Job Salary Calculator</a>
+            <a href="http://127.0.0.1:5000/totalcompinfo" class="button">Learn more about Total Compensation</a>
+    </div>
+	
+</body>
